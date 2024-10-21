@@ -1,1 +1,0 @@
-console.log("first class of javascript")
