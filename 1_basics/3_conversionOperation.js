@@ -36,3 +36,68 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+
+//  ********************* Operation *********************
+
+
+let value = 3
+let negValue = -value
+
+console.log(negValue);
+
+
+
+
+     // Arithmetic operation //
+
+
+// console.log(2+2);  // for addition 
+
+// console.log(2-2);  // for subtract 
+
+// console.log(2*2);  // for multiply 
+
+// console.log(2**2);  // for power multiplication
+
+// console.log(2**3);  // for power multiplication 
+
+// console.log(2/2);  // for divide
+
+// console.log(2%2);  // for remainder 
+
+
+
+let str1 = 'hello'
+let str2 = ' javascript'
+
+let str3 = str2 + str2
+console.log(str3);
+
+
+console.log("1" + 2);
+console.log(1 + "2");
+
+console.log("1" + 2 + 2);  // 1st is string all automatically convert into string and output is => 122
+
+console.log(1 + 2 + "2");  // this operation output is => 32 
+
+
+console.log(+true);
+console.log(+"");
+
+
+
+let game_Counter = 12;
+game_Counter++   // postfix operators 
+
+console.log(game_Counter);
+
+
+let gameCounter = 14;
+++gameCounter   // prefix operates 
+
+console.log(gameCounter);
+
+
+
