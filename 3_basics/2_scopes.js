@@ -54,7 +54,7 @@ if (true){
 //  *************** Interesting **************
 
 
-console.log(addOne(6));  // it is work.
+console.log(addOne(6));  // this will work.
 function addOne(num){
     return num + 1
 }
@@ -64,7 +64,7 @@ function addOne(num){
 
 
 // sometime its called expressions, but it is a funnction
-console.log(addTwo(7)); // it is not work because function declared in variable.
+console.log(addTwo(7)); // this will not work because function declared in variable.
 const addTwo = function(num){   
     return num + 3
 }
