@@ -63,8 +63,10 @@ function addOne(num){
 
 
 
-// sometime its called expressions, but it is a funnction
+
 console.log(addTwo(7)); // this will not work because function declared in variable.
+
+// sometime its called expressions, but it is a funnction
 const addTwo = function(num){   
     return num + 3
 }
