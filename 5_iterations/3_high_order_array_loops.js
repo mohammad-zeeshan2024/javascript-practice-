@@ -46,6 +46,8 @@ for (const [key, value] of map) {
 }
 
 
+
+// for of loops on object.
 const myObject = {
     fruit : 'apple',
     fruit2 : 'banana',
