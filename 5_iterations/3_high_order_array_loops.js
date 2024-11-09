@@ -39,7 +39,7 @@ for (const key of map) {
     
 }
 
-// after destructuring in array
+// after destructuring map convert into arrays.
 for (const [key, value] of map) {
     console.log(key, ':-', value);
     
@@ -51,7 +51,7 @@ const myObject = {
     fruit2 : 'banana',
 }
 
-// object is not iterable.
+// object is not iterable in for of loops.
 
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);
