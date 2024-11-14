@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat Element</title>
+    <style>
+        body{
+            background-color: black;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    // styling element
+    const newDiv = document.createElement('div')
+    console.log(newDiv);
+    newDiv.className = "main"
+    newDiv.id = "myId"
+    newDiv.setAttribute("title", "create element")
+    newDiv.style.backgroundColor = "orange"
+    newDiv.style.color = "black"
+    newDiv.style.padding = "10px"
+
+    // add text in web
+    const addText = document.createTextNode("Create element")
+    newDiv.appendChild(addText)
+
+    document.body.appendChild(newDiv)
+
+    
+</script>
+</html>
