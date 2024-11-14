@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Introducton</title>
+    <style>
+        *{
+            margin: 2px;
+            padding: 2px;
+        }
+        .bg-color {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+    <body class ="bg-color">
+</head>
+    <div>
+        <h1 id="head" class="heading">DOM introduction <span style="display: none;">by hitesh Chaudhary sir</span></h1>
+        <h2>1.Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>2.Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>3.Lorem ipsum dolor sit amet consectetur.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password">
+        <ul>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // all code check in browser console.
+    const styling = document.getElementById("head")
+    // store the value getelEmentById in -> styling.
+
+    styling.style.backgroundColor = 'green'
+    styling.style.padding = '10px 20px'
+    styling.style.borderRadius = '15px'
+
+    // styling.innerText -> stand for only output is text we write. if text have special properties .innerText not able to output of all text.
+
+    // Ex ->  <h1 id="head" class="heading">DOM introduction <span style="display: none;"></span>by  hitesh Chaudhary sir </h1>
+    // output is -> Dom Introduction
+
+
+     
+    // styling.textContent -> he give all text.
+
+    // Ex ->  <h1 id="head" class="heading">DOM introduction <span style="display: none;"></span>by  hitesh Chaudhary sir </h1>
+    // output is -> Dom Introduction by hitesh Chaudhry sir.
+
+
+    //************** Query Selector **************
+
+
+    // in .querySelector, all types of CSS selectors is supported.
+    // .querySelector is always select first item.
+    document.querySelector('#head')
+    document.querySelector('h2')
+    document.querySelector('.heading')
+    document.querySelector('input[type="password"]')
+
+
+    document.querySelector('ul')
+    const myUl = document.querySelector('ul')
+    const turnGreen = myUl.querySelector('li')
+    turnGreen.style.backgroundColor = "green"
+    turnGreen.style.padding = "5px 10px"
+    turnGreen.style.borderRadius = "5px"
+
+    turnGreen.innerText = "five"  // inner text change.
+
+
+    //************** Query Selector All **************
+
+    const changeColor = document.querySelectorAll('h2')
+    
+    
+    changeColor[1].style.color = 'green'
+    changeColor[0].style.backgroundColor = 'red'
+
+    // foreach loop
+    document.querySelectorAll('li')
+    const colr = document.querySelectorAll('li')
+    colr.forEach((l) => l.style.color = "red")
+
+
+    // ********* Get Elements By Class Name *********
+
+    // always return HTML collection list
+    document.getElementsByClassName('list') 
+    const tem = document.getElementsByClassName('list') 
+
+    // html collection convert into Array
+    const newArray = Array.from(tem)
+
+    newArray.forEach((li) => li.style.backgroundColor = 'white')
+
+</script>
+</html>
