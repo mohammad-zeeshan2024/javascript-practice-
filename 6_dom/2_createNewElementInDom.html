@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Element in DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+    </div>
+    
+</body>
+<script>
+    const mainDiv = document.querySelector(".main")
+    console.log(mainDiv);
+    console.log(mainDiv.children); // to access main div to children div. and also geave HTML Collection.
+
+    console.log(mainDiv.children[1].innerHTML); // to access childern div which element is 1 indexing. 
+    
+
+    for (let i = 0; i < mainDiv.children.length; i++) {
+        console.log(mainDiv.children[i].innerHTML);
+        
+    }
+
+
+    mainDiv.children[1].style.color = "green"
+
+
+    console.log(mainDiv.firstElementChild);  // to access first child of main element(parent).
+
+    console.log(mainDiv.lastElementChild);  // to access last child of main element(parent).
+
+
+    const day = document.querySelector('.day')
+    console.log(day);
+    console.log(day.parentElement); // to access parent element through child element.
+
+    console.log(day.nextElementSibling); // to access 2nd child element.
+    
+    // Node list
+    console.log("NODES: ", mainDiv.childNodes);
+    
+    
+</script>
+</html>
