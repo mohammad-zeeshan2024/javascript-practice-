@@ -1,0 +1,39 @@
+h1,h2{
+    text-align: center;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 100px; */
+    padding: 30px;
+    justify-content: space-evenly;
+}
+.button{
+    height: 100px;
+    width: 100px;
+}
+#green{
+    background-color: green;
+    border: 2px solid;
+    border-color: blue;
+    border-radius: 5px;
+}
+#yellow{
+    background-color: yellow;
+    border: 2px solid;
+    border-color: blue;
+    border-radius: 5px;
+}
+#red{
+    background-color: red;
+    border: 2px solid;
+    border-color: blue;
+    border-radius: 5px;
+}
+#blue{
+    background-color: blue;
+    border: 2px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
