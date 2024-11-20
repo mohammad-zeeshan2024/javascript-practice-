@@ -2,10 +2,10 @@ const btn = document.querySelectorAll('.button')
 const body = document.querySelector('body')
 
 btn.forEach(function (buttons) {
-    console.log(buttons);
+    console.log(buttons);  // here we can access all buttons. 
     buttons.addEventListener('click',function(event){
-        console.log(event);
-        console.log(event.target);
+        console.log(event);  // here addEventListener perform only mouse click.
+        console.log(event.target);  
         
         if (event.target.id === 'green') {
             body.style.backgroundColor = event.target.id;
