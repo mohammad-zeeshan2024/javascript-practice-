@@ -2,9 +2,9 @@ const btn = document.querySelectorAll('.button')
 const body = document.querySelector('body')
 
 btn.forEach(function (buttons) {
-    console.log(buttons);  // here we can access all buttons. 
+    log(buttons);  // here we can access all buttons. 
     buttons.addEventListener('click',function(event){
-        console.log(event);  // here addEventListener perform only mouse click.
+        console.log(event);
         console.log(event.target);  
         
         if (event.target.id === 'green') {
