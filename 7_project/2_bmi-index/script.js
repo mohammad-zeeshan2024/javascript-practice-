@@ -20,7 +20,14 @@ form.addEventListener('submit', function(e){
         const CalculateBmi = (weight / ((height * height) / 10000)).toFixed(2); 
 
         // result
-        result.innerHTML = `<span> ${CalculateBmi} </span>`
+        // result.innerHTML = `<span> ${CalculateBmi} </span>`
+        if (CalculateBmi <= 18.6) {
+            result.innerHTML = `<span> ${CalculateBmi} &nbsp; You are in Under Weight Category </span>`
+        } else if (CalculateBmi <= 24.9) {
+            result.innerHTML = `<span> ${CalculateBmi} &nbsp; You are in Normal Range Catagory</span>`
+        } else {
+            result.innerHTML = `<span> ${CalculateBmi} &nbsp; You are in Over Weight Category</span>`
+        }
     }
 
 })
