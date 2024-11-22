@@ -19,6 +19,7 @@ form.addEventListener('submit', function(e){
     } else {
         const CalculateBmi = (weight / ((height * height) / 10000)).toFixed(2); 
 
+        // result
         result.innerHTML = `<span> ${CalculateBmi} </span>`
     }
 
